@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC_trade</title>
+    <link rel="stylesheet" href="stylse.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--font awesome link-->
+    <!--header section of page-->
+    <!--signature
+    
+    kkkkkk   kkk  kkk  kkk       kkk  kkkkkkkk  kkk   kkk               
+    kkk kkk  kkk  kkk   kkk     kkk   kkk       kkk  kkk                 
+    kkk  kkk kkk  kkk    kkk   kkk    kkkkkkk   kkkkkk                    
+    kkk   kkkkkk  kkk     kkk kkk     kkk       kkk  kkk
+    kkk    kkkkk  kkk       kkk       kkkkkkkk  kkk   kkk               
+     
+    kkk-->  
+    
+    <div id="header">
+        <ul>
+           <li><a href="#deals">Buy</a></li> 
+           <li><a href="#foot">Contact</a></li> 
+
+        </ul>
+       
+    
+    </div>
+</head>
+<body>
+    <script src="script.js"></script>
+   <div id="content">
+<h1 class="cap">
+    Start trading today
+</h1>
+   <div class="container">
+       <div id="text">
+       <h2>Shop According to <br>
+             Your Pockets.</h2><br>
+             <p>Just click on the buy button below to start purchase</p>
+             <button id="btn" onclick="buy()">BUY</button>
+       </div>
+       <div id="img">
+          <img src="btc2.jpg" alt="logo" height="450px" width="600px">
+       </div>
+   </div>
+   </div>
+   <secion id="deals">  
+    <a href="index.html"><i id="scrollableElement" id="dest" class="fas fa-arrow-circle-up"></i></a>
+      
+        <!--price tag images for amount discount payment place-->
+       <div id="val1">
+           <img src="btc1.jpg" alt="" style="border-radius: 13px;" height="200px">
+           <p>Make a purchase of 100 dollars 
+               <br> worth of BTC and get instant 20% 
+                <br> bouns</p>
+                <button onclick="buy()" class="get">BUY</button>
+            </div>
+       <div id="val2">
+           <img src="btc2.jpg" alt="" style="border-radius: 13px;" >
+        <p>Make a purchase of 200 dollars 
+            <br> worth of BTC and get instant 20% 
+             <br> bouns</p>
+             <button onclick="buy()" class="get">BUY</button>
+       </div>
+       <div id="val3">
+           <img src="btc5.jpg" alt="" style="border-radius: 13px;">
+        <p>Make a purchase of 300 dollars 
+            <br> worth of BTC and get instant 30% 
+             <br> bouns</p>
+             <button onclick="buy()" class="get">BUY</button>
+       </div>
+       <div id="val4">
+
+           <img src="btc8.jpg" alt="" style="border-radius: 13px;">
+        <p>Make a purchase of 500 dollars 
+            <br> worth of BTC and get instant 35% 
+             <br> bouns</p>
+             <button onclick="buy()"class="get">BUY</button>
+       </div>
+   </secion>
+           <!--slide show tag images -->
+       <div id="amt">
+         <div id="conti">
+             <img id="imgx"  src="btc1.jpg" alt="">
+             <img id="imgx"  src="btc2.jpg" alt="">
+             <img id="imgx"  src="btc5.jpg" alt="">
+             <img id="imgx"  src="btc7.jpg" alt="">
+         </div>
+       </div>
+
+
+      <script>
+    //just slide show scripting ;      
+var indexValue = 0;
+function slideshow(){
+  setTimeout(slideshow, 2000)
+  var x;
+  const img = document.querySelectorAll('#imgx');
+  for(x = 0;x < img.length;x++){
+      img[x].style.display = 'none';
+  }
+  indexValue++;
+  if(indexValue > img.length){
+    indexValue = 1;
+  }img[indexValue -1].style.display = 'block';
+}
+slideshow();
+
+
+   
+      </script>
+    <style>
+        /*starting of css
+        this is were the loks and shape or teh webpage is made 
+        contents are head, body and footer*/
+        
+     </style>
+    <!-- footer section , contains a div with an id of foot-->
+</body>
+<section id="foot">
+    <div class="contact">
+      <h1 class="he"><span class="lab">You </span>can contact us on</h1> <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing <br>
+      elit. Nisi, in sapiente unde excepturi <br>
+       distinctio eveniet cum ex consequatur <br> 
+       quia mollitia? Neque iusto animi <br>
+        ad odit explicabo cumque ex pariatur sunt.
+
+    </div>
+    <div class="visit">
+        <h1 class="he"><span class="lab">Or </span>visit us on</h1> <br><br>
+        you can visit us on any of our social <br>
+         elit. Nisi, in sapiente unde excepturi <br>
+          distinctio eveniet cum ex consequatur <br> 
+          quia mollitia? Neque iusto animi <br>
+           ad odit explicabo cumque ex pariatur sunt.
+
+    </div>
+    <div class="logo">
+        <i id="fab" class="fab fa-facebook-square" ></i>
+        <i id="fab" class="fab fa-twitter"></i>
+        <i id="fab"  class="far fa-thumbs-up"></i>
+        <i id="fab" class="fas fa-bell"></i>
+    </div>
+</section>
+</div>
+
+</html>
